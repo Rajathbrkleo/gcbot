@@ -500,6 +500,7 @@
   const obs = new IntersectionObserver(entries => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }); }, {threshold:0.1});
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+
  <script type="text/javascript" charset="utf-8">
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
@@ -514,6 +515,5 @@
     deploymentId: '16b44ac8-4840-4ef4-ad74-25e43d00a506'
   });
 </script>
-  
 </body>
 </html>
