@@ -500,5 +500,20 @@
   const obs = new IntersectionObserver(entries => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }); }, {threshold:0.1});
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+ <script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.usw2.pure.cloud/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-usw2',
+    deploymentId: '16b44ac8-4840-4ef4-ad74-25e43d00a506'
+  });
+</script>
+  
 </body>
 </html>
