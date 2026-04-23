@@ -67,9 +67,9 @@
   .btn-hero:hover { background:var(--teal); border-color:var(--teal); transform:translateY(-2px); box-shadow:0 10px 26px rgba(0,137,123,0.4); }
 
   .hero-feature-icons { position:absolute; bottom:2.2rem; right:3rem; display:flex; gap:1.8rem; z-index:2; animation:fadeUp 1s 0.5s ease both; }
-  .hfi { width:200px; height:200px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:5.2rem; cursor:pointer; box-shadow:0 8px 32px rgba(0,0,0,0.32); transition:transform 0.25s,box-shadow 0.25s; }
+  .hfi { width:145px; height:145px; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:5rem; cursor:pointer; box-shadow:0 8px 32px rgba(0,0,0,0.32); transition:transform 0.25s,box-shadow 0.25s; }
   .hfi:hover { transform:translateY(-8px) scale(1.06); box-shadow:0 20px 48px rgba(0,0,0,0.36); }
-  .hfi span { font-size:1.05rem; color:#fff; margin-top:0.3rem; font-weight:700; letter-spacing:0.02em; }
+  .hfi span { font-size:0.72rem; color:#fff; margin-top:0.1rem; font-weight:700; letter-spacing:0.02em; }
   .hfi-1{background:var(--orange);} .hfi-2{background:var(--teal);} .hfi-3{background:#2E7D32;} .hfi-4{background:#546E7A;}
 
   .hero-dots { position:absolute; bottom:1.3rem; left:50%; transform:translateX(-50%); display:flex; gap:0.55rem; z-index:2; }
@@ -500,7 +500,6 @@
   const obs = new IntersectionObserver(entries => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }); }, {threshold:0.1});
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
-
  <script type="text/javascript" charset="utf-8">
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
